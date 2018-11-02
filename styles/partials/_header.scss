@@ -3,6 +3,9 @@
 .main-header{
     background-color: $primary;
     height: 100vh;
+    &__wrapper {
+        display: flex;
+    }
 }
 
 .main-nav {
@@ -23,34 +26,26 @@
             order: -1;
         }
         &--logo {
-
+            font-family: $headingfont;
+            font-size: 5rem;
         }
     }
     &__link {
         color: white;
-
     }
-
-    }
-
-
-// Montserrat, Bold, 20px
-// Right, Line height: 29px, Letter spacing: 1px
-
-
-.wrapper {
-    border: 1px solid red;
 }
 
 
-// .nav {
-//     fasff
-//     &__item
-//     &__link{
-//         &--active{
-//             &
-//                     &
-//         }
-//     }
-// }
+.hero-content {
+    width: 60%;
+    border: 1px solid yellow;
+}
+.circle-text {
+    width: 20%;
+}
+    // box-shadow: 15px 15px 0 white;
+// 
 
+// .main-headline {
+//     font-size: 12rem;
+// }

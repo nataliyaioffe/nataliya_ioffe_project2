@@ -1,8 +1,50 @@
 $primary: #345231;
 $secondary: #709b6b;
 $accent: #e4a436;
-$black: #1f1f1f;
+$text-color: #1f1f1f;
 $white: #f6f6f6;
 
-$headline: 'Abril Fatface', cursive;
-$main: 'Montserrat', sans-serif;
+$headingfont: 'Abril Fatface', cursive;
+$basefont: 'Montserrat', sans-serif;
+
+
+@mixin heading-text($size) {
+  font-family: $headingfont;
+  font-size: $size * 1px;
+  font-size: ($size/10) * 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $text-color;
+}
+
+@mixin body-text($size) {
+  font-family: $basefont;
+  font-size: $size * 1px;
+  font-size: ($size/10) * 1rem;
+  line-height: 32px;
+  color: $text-color;
+}
+
+// @mixin button($width) {
+//   width: $width;
+//   background: $button-color;
+//   font-family: $headingfont;
+//   line-height: 32px;
+//   text-align: center;
+// }
+
+
+h1 {
+    @include heading-text(12) 
+  }
+
+h2 {
+    @include heading-text(42) 
+}
+
+h3 {
+    @include heading-text(32) 
+}
+h4 {
+    @include heading-text(24) 
+}

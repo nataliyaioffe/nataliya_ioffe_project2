@@ -8,20 +8,36 @@ ul {
     list-style-type: none;
 }
 
-$primary: #345231;
-$secondary: #709b6b;
-$accent: #e4a436;
-$black: #1f1f1f;
-$white: #f6f6f6;
-
-$headline: 'Abril Fatface', cursive;
-$main: 'Montserrat', sans-serif;
-
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: $main;
+    font-family: $basefont;
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+.wrapper {
+    border: 1px solid red;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+}
+
+h1 {
+    font-size: 12rem;
+}
+
+h2, h3 {
+    font-family: $headingfont;
+    font-size: 3.2rem;
+    letter-spacing: 0.1rem;
+}
+
+h4 {
+    font-family: $headingfont;
+    font-size: 2.4rem;
+    letter-spacing: 0.1rem;
 }
 /* END GLOBAL STYLES */
