@@ -2,7 +2,46 @@
 
 .main-header{
     background-color: $primary;
+    height: 100vh;
 }
+
+.main-nav {
+    font-weight: 700;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        padding: 20px;
+        &:nth-of-type(2){
+            order: -1;
+        }
+        &:nth-of-type(3){
+            order: -1;
+        }
+        &--logo {
+
+        }
+    }
+    &__link {
+        color: white;
+
+    }
+
+    }
+
+
+// Montserrat, Bold, 20px
+// Right, Line height: 29px, Letter spacing: 1px
+
+
+.wrapper {
+    border: 1px solid red;
+}
+
 
 // .nav {
 //     fasff

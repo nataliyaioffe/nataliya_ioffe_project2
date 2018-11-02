@@ -4,14 +4,24 @@ a {text-decoration: none;}
 
 img {width: 100%; max-width: 100%; display: block;}
 
+ul {
+    list-style-type: none;
+}
+
 $primary: #345231;
 $secondary: #709b6b;
 $accent: #e4a436;
 $black: #1f1f1f;
 $white: #f6f6f6;
 
-
 $headline: 'Abril Fatface', cursive;
 $main: 'Montserrat', sans-serif;
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $main;
+}
 /* END GLOBAL STYLES */
