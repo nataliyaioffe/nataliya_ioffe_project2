@@ -1,0 +1,40 @@
+// WHO'S WILLOW
+
+.section {
+    background-color: $white;
+    padding: 100px 0;
+}
+
+.section-content {
+    text-align: center;
+    &__text {
+        margin: 30px 0;
+    }
+    &__btn {
+        @include button(auto);
+        padding: 10px 30px;
+    }
+}
+
+// FAVOURITE THINGS
+.section-content--right-align {
+    border: 1px solid orange;
+    text-align: right;
+}
+
+
+// BUCKET LIST
+
+
+// JOURNEY
+
+.section-content--left-align {
+    border: 1px solid red;
+    flex: 0 0 70%;
+    text-align: left;
+}
+
+.journey-image {
+    flex: 0 1 30%;
+}
+

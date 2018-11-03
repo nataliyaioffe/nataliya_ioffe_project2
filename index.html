@@ -16,7 +16,7 @@
                     <a href="index.html" class="main-nav__link main-nav__link--logo">Willow</a>
                 </li>
                 <li class="main-nav__list-item">
-                    <a href="index.html" class="main-nav__link">Home</a>
+                    <a href="index.html" class="main-nav__link--active">Home</a>
                 </li>
                 <li class="main-nav__list-item">
                     <a href="about.html" class="main-nav__link">About</a>
@@ -30,15 +30,17 @@
             </ul>
         </nav>
         <!-- //// end nav -->
-        <div class="main-header__wrapper wrapper">
-            <div class="hero-content">
-                <div class="circle-text">
+        <div class="wrapper flex-wrapper">
+            <!-- <div class="hero-banner"> -->
+            <div class="hero-text">
+                <!-- <div class="circle-text">
                     <img src="./assets/circle-text.png" alt="Daily Musings Of">
-                </div>
-                <h1 class="main-headline">Willow</h1>
+                </div> -->
+                <h1 class="hero-headline">Willow</h1>
             </div>
+            <!-- </div> -->
                 <!-- /// end hero-content -->
-            <div class="main-header__hero-image">
+            <div class="hero-image">
                 <img src="./assets/home-image-1.jpg"  class=" " alt="Headshot of girl amongst tropical palms">
             </div>
         <!-- /// end hero image -->
@@ -48,27 +50,28 @@
     <!-- /// END HEADER -->
 
     <main>
-        <section>
+        <section class="section">
             <div class="wrapper">
-                <div>
-                    <h2>Who's Willow?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam, minus optio sequi totam iure? Id, voluptatem veniam? Praesentium, dolore voluptatum. Aliquam totam dolore nihil similique eveniet dolores consequatur! Soluta officia delectus, praesentium voluptates nulla beatae asperiores suscipit? Neque recusandae eaque accusantium, eius sit ea at quas sequi quos illum distinctio aliquam mollitia veniam maiores. Assumenda porro repellendus qui soluta. Consequatur nisi inventore ea dolor, voluptate deleniti dicta eius, dolorum quae excepturi a blanditiis sit repudiandae facilis, quaerat architecto quod exercitationem cupiditate tenetur vitae ad ab sint voluptates incidunt. Nisi recusandae inventore corrupti, tempore fugiat minus quibusdam magni eaque nobis?</p>
-                    <a href="#">Find out more</a>
+                <div class="section-content">
+                    <h2 class="section-content__headline">Who's Willow?</h2>
+                    <p class="section-content__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam saepe perferendis repudiandae nobis deserunt veritatis dolorem, voluptatibus cum a suscipit delectus error, distinctio voluptates adipisci dignissimos ut, animi totam. Id, repellat. Quas repellendus dolore est ex sint maiores veniam, nesciunt, quasi sequi odio, possimus asperiores vel nihil consequuntur.</p>
+                    <a href="#" class="section-content__btn">Find out more</a>
                 </div>
+                <!-- //end section-content -->
             </div>
             <!-- /// end wrapper -->
         </section>
         <!-- /// END WHO'S WILLOW -->
-        <section>
+        <section class="section">
             <div class="wrapper">
-                <div>
-                    <div>
+                <div clas="section-content">
+                    <div section-content--left-align>
                         <img src="./assets/home-image-2.jpg" alt="A wooden bridge over a waterfall.">
                     </div>
-                    <div>
-                        <h3>Favorite Things</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, praesentium. Minima obcaecati ab, id, nisi natus asperiores, aut blanditiis magnam quisquam laudantium architecto? Error, ducimus!</p>
-                        <a href="#">Read More</a>
+                    <div class="section-content--left-align">
+                        <h3 class="section-content__headline">Favorite Things</h3>
+                        <p class="section-content__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, praesentium. Minima obcaecati ab, id, nisi natus asperiores, aut blanditiis magnam quisquam laudantium architecto? Error, ducimus!</p>
+                        <a href="#" class="section-content__btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -79,10 +82,10 @@
                     <div>
                         <img src="./assets/home-image-3.jpg" alt="Close up of a lotus flower floating on a pond.">
                     </div>
-                    <div>
-                        <h3>Bucket List</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam eveniet veritatis fugit voluptatum rerum reiciendis quia, vel, tenetur distinctio quasi debitis reprehenderit provident? Consequatur, quis!</p>
-                        <a href="#">Read More</a>
+                    <div class="section-content--right-align">
+                        <h3 class="section-content__headline">Bucket List</h3>
+                        <p class="section-content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam eveniet veritatis fugit voluptatum rerum reiciendis quia, vel, tenetur distinctio quasi debitis reprehenderit provident? Consequatur, quis!</p>
+                        <a href="#" class="section-content__btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -90,22 +93,26 @@
             <!-- /// end bucket list -->
         </section>
         <!-- /// END WILLOW THINGS -->
-        <section>
-            <div class="wrapper"></div>
-                <div>
+        <section class="section">
+            <div class="wrapper flex-wrapper">
+                <div class="journey-image">
                     <img src="./assets/home-image-4.jpg" alt="">
                 </div>
-                <div>
-                    <h2>Willow's Journey</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam accusamus perferendis repudiandae tenetur beatae, veniam eveniet et sit, cumque doloremque, illum suscipit molestias consectetur eos.</p>
-                    <a href="#">Find out more</a>
+                <div class="section-content--left-align">
+                    <h2 class="section-content__headline">Willow's Journey</h2>
+                    <p class="section-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam accusamus perferendis repudiandae tenetur beatae, veniam eveniet et sit, cumque doloremque, illum suscipit molestias consectetur eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit eos ipsum neque maxime repellendus ex recusandae quas corporis at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi laudantium ratione. </p>
+                    <a href="#" class="section-content__btn">Find out more</a>
                 </div>
             </div>
             <!-- /// end wrapper -->
+            
         </section>
         <!-- /// END WILLOW'S JOURNEY-->
 
         <section>
+            <div class="full-bleed-image">
+                <img src="./assets/home-image-5.jpg" alt="">
+            </div>
             <!-- landscape background image -->
         </section>
         <!-- /// END LANDSCAPE -->

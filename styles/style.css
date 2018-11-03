@@ -138,14 +138,43 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0; }
 
 /* END GENERAL STYLES */
-h1 {
-  font-family: "Abril Fatface", cursive;
-  font-size: 12px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+/* START GLOBAL STYLES */
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block; }
+
+ul {
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 32px;
   color: #1f1f1f; }
 
+.wrapper {
+  border: 1px solid black;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%; }
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* END GLOBAL STYLES */
 h2 {
   font-family: "Abril Fatface", cursive;
   font-size: 42px;
@@ -170,53 +199,23 @@ h4 {
   letter-spacing: 1px;
   color: #1f1f1f; }
 
-/* START GLOBAL STYLES */
-a {
-  text-decoration: none; }
-
-img {
-  width: 100%;
-  max-width: 100%;
-  display: block; }
-
-ul {
-  list-style-type: none; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  line-height: 3.2rem; }
-
-.wrapper {
-  border: 1px solid red;
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 80%; }
-
-h1 {
-  font-size: 12rem; }
-
-h2, h3 {
-  font-family: "Abril Fatface", cursive;
-  font-size: 3.2rem;
-  letter-spacing: 0.1rem; }
-
-h4 {
-  font-family: "Abril Fatface", cursive;
-  font-size: 2.4rem;
-  letter-spacing: 0.1rem; }
-
-/* END GLOBAL STYLES */
 .main-header {
   background-color: #345231;
-  height: 100vh; }
-  .main-header__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+  height: 85vh; }
+  .main-header .flex-wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .main-header .hero-headline {
+    font-family: "Abril Fatface", cursive;
+    font-size: 125.5px;
+    font-size: 12.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f6f6f6; }
 
 .main-nav {
   font-weight: 700;
@@ -227,7 +226,8 @@ h4 {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 50px; }
   .main-nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -244,13 +244,65 @@ h4 {
       order: -1; }
     .main-nav__list-item--logo {
       font-family: "Abril Fatface", cursive;
-      font-size: 5rem; }
+      font-size: 4rem;
+      line-height: 0.5; }
   .main-nav__link {
     color: white; }
+    .main-nav__link--active {
+      color: #e4a436; }
 
-.hero-content {
-  width: 60%;
+h1 {
+  position: relative; }
+
+h1::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../assets/circle-text.png);
+  background-repeat: no-repeat; }
+
+.hero-text {
   border: 1px solid yellow; }
 
-.circle-text {
-  width: 20%; }
+.hero-image {
+  bordeR: 1px solid blue;
+  width: 40%; }
+
+.section {
+  background-color: #f6f6f6;
+  padding: 100px 0; }
+
+.section-content {
+  text-align: center; }
+  .section-content__text {
+    margin: 30px 0; }
+  .section-content__btn {
+    width: auto;
+    display: inline-block;
+    background: #e4a436;
+    font-family: "Abril Fatface", cursive;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    padding: 10px 30px; }
+
+.section-content--right-align {
+  border: 1px solid orange;
+  text-align: right; }
+
+.section-content--left-align {
+  border: 1px solid red;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  text-align: left; }
+
+.journey-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 30%;
+  flex: 0 1 30%; }

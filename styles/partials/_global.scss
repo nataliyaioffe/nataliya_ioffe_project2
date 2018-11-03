@@ -13,31 +13,42 @@ html {
 }
 
 body {
-    font-family: $basefont;
-    font-size: 2rem;
-    line-height: 3.2rem;
+    @include body-text(20);
 }
 
 .wrapper {
-    border: 1px solid red;
+    border: 1px solid black;
     margin: 0 auto;
     max-width: 1280px;
     width: 80%;
 }
 
-h1 {
-    font-size: 12rem;
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+
 }
 
-h2, h3 {
-    font-family: $headingfont;
-    font-size: 3.2rem;
-    letter-spacing: 0.1rem;
+
+/* END GLOBAL STYLES */
+
+
+// h1 {
+    // @include heading-text(80);
+    // HOME"WILLOW" ... and Blog & News, Contact Me
+//   }
+
+h2 {
+    @include heading-text(42);
+    // "who's willow, Willow's Journey"
+}
+
+h3 {
+    @include heading-text(32);
+    // "favourite things, photos, about"
 }
 
 h4 {
-    font-family: $headingfont;
-    font-size: 2.4rem;
-    letter-spacing: 0.1rem;
+    @include heading-text(24);
+    // "About Willow, Recent Posts"
 }
-/* END GLOBAL STYLES */

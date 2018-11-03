@@ -14,6 +14,7 @@ $basefont: 'Montserrat', sans-serif;
   font-size: ($size/10) * 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  // line-height: 92px;
   color: $text-color;
 }
 
@@ -25,26 +26,14 @@ $basefont: 'Montserrat', sans-serif;
   color: $text-color;
 }
 
-// @mixin button($width) {
-//   width: $width;
-//   background: $button-color;
-//   font-family: $headingfont;
-//   line-height: 32px;
-//   text-align: center;
-// }
-
-
-h1 {
-    @include heading-text(12) 
-  }
-
-h2 {
-    @include heading-text(42) 
-}
-
-h3 {
-    @include heading-text(32) 
-}
-h4 {
-    @include heading-text(24) 
+@mixin button($width) {
+  width: $width;
+  display: inline-block;
+  background: $accent;
+  font-family: $headingfont;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color;
 }
