@@ -1,8 +1,9 @@
 $primary: #345231;
 $secondary: #709b6b;
 $accent: #e4a436;
-$text-color: #1f1f1f;
-$white: #f6f6f6;
+$dark: #1f1f1f;
+$light: #f6f6f6;
+$white: #fff;
 
 $headingfont: 'Abril Fatface', cursive;
 $basefont: 'Montserrat', sans-serif;
@@ -15,7 +16,6 @@ $basefont: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   // line-height: 92px;
-  color: $text-color;
 }
 
 @mixin body-text($size) {
@@ -23,7 +23,7 @@ $basefont: 'Montserrat', sans-serif;
   font-size: $size * 1px;
   font-size: ($size/10) * 1rem;
   line-height: 32px;
-  color: $text-color;
+  color: $dark;
 }
 
 @mixin button($width) {
@@ -35,5 +35,5 @@ $basefont: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  color: $text-color;
+  color: $dark;
 }

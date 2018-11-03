@@ -1,13 +1,31 @@
 // WHO'S WILLOW
 
-.section {
-    background-color: $white;
-    padding: 100px 0;
+.head-section {
+    &--top {
+        padding: 100px 0 150px 0;
+    }
+    &--bottom {
+        padding: 150px 0 100px 0;
+    }
 }
-
+.subsections {
+    background: $white;
+}
 .section-content {
-    text-align: center;
+    display: flex;
+    &__item {
+        width: 50%;
+    }
     &__text {
+        text-align: center; 
+        &--left {
+            text-align: left;
+        }
+        &--right {
+            text-align: right;
+        }
+    }
+    &__description {
         margin: 30px 0;
     }
     &__btn {
@@ -17,7 +35,7 @@
 }
 
 // FAVOURITE THINGS
-.section-content--right-align {
+.section-content--right {
     border: 1px solid orange;
     text-align: right;
 }
@@ -28,7 +46,7 @@
 
 // JOURNEY
 
-.section-content--left-align {
+.section-content--left {
     border: 1px solid red;
     flex: 0 0 70%;
     text-align: left;
@@ -38,3 +56,10 @@
     flex: 0 1 30%;
 }
 
+
+.footer {
+    background-color: $dark;
+    color: $light;
+    text-align: center;
+    padding: 5px;
+}
