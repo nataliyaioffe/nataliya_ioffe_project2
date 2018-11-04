@@ -133,6 +133,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -159,7 +172,7 @@ body {
   font-size: 2rem;
   line-height: 32px;
   color: #1f1f1f;
-  background: #f6f6f6;
+  background: #6a6a6a;
   color: #1f1f1f; }
 
 .wrapper {
@@ -214,7 +227,7 @@ h4 {
     font-size: 12.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #f6f6f6; }
+    color: #6a6a6a; }
 
 .main-nav {
   font-weight: 700;
@@ -246,7 +259,7 @@ h4 {
       font-size: 4rem;
       line-height: 0.5; }
   .main-nav__link {
-    color: #f6f6f6; }
+    color: #6a6a6a; }
     .main-nav__link--active {
       color: #e4a436; }
 
@@ -291,7 +304,68 @@ h4 {
     font-size: 8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #f6f6f6; }
+    color: #6a6a6a;
+    line-height: 92px;
+    position: relative;
+    top: 17px; }
+
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 100px 0; }
+
+.asides-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 3;
+  -ms-flex: 3 0 15%;
+  flex: 3 0 15%; }
+
+.aside {
+  background-color: #fff;
+  padding: 30px;
+  margin: 0 40px 20px 0; }
+  .aside__headline {
+    margin: 15px 0; }
+  .aside__link {
+    font-weight: 700;
+    color: #709b6b; }
+  .aside__list {
+    margin-left: 30px;
+    list-style-type: disc; }
+
+.post {
+  padding: 30px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 60%;
+  flex: 1 0 60%;
+  background: white; }
+  .post p {
+    margin: 15px 0; }
+  .post__title {
+    font-family: "Abril Fatface", cursive;
+    font-size: 26px;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .head-section--top {
   padding: 100px 0 150px 0; }
@@ -346,6 +420,6 @@ h4 {
 
 .footer {
   background-color: #1f1f1f;
-  color: #f6f6f6;
+  color: #6a6a6a;
   text-align: center;
   padding: 5px; }

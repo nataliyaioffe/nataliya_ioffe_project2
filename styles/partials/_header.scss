@@ -23,7 +23,6 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    // margin-bottom: 50px;
     background-color: $primary;
     &__list {
         display: flex;
@@ -65,7 +64,6 @@
 
 }
 
-
 .hero-text {
     border: 1px solid yellow;
 }
@@ -77,8 +75,8 @@
 
 
 
-    // box-shadow: 15px 15px 0 white;
-// 
+// box-shadow: 15px 15px 0 white;
+ 
 
 /// BLOG PAGE
 
@@ -98,5 +96,60 @@
     &__headline {
         @include heading-text(80);
         color: $light;
+        line-height: 92px;
+        position: relative;
+        top: 17px;
+
     }
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 ;
+    p {
+    }
+
+}
+
+.asides-section {
+    display: flex;
+    flex-direction: column;
+    flex: 3 0 15%;
+}
+.aside {
+    background-color: $white;
+    padding: 30px;
+    margin: 0 40px 20px 0;
+    &__headline {
+        margin: 15px 0;
+    }
+    &__link {
+        font-weight: 700;
+        color: $secondary;
+    }
+    &__list {
+        margin-left: 30px;
+        list-style-type: disc;
+    }
+}
+
+.post {
+    padding: 30px;
+    flex: 1 0 60%;
+    background: white;
+    p {
+        margin: 15px 0;
+    }
+    
+    &__title {
+        @include heading-text(26);
+        margin-bottom: 20px;
+    }
+}
+
+// CONTACT ME
+.social {
+    display: flex;
+    justify-content: space-between;
 }
