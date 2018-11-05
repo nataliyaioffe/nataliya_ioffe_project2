@@ -172,11 +172,11 @@ body {
   font-size: 2rem;
   line-height: 32px;
   color: #1f1f1f;
-  background: #6a6a6a;
+  background: #f6f6f6;
   color: #1f1f1f; }
 
 .wrapper {
-  border: 1px solid black;
+  border: 1px solid #000;
   margin: 0 auto;
   max-width: 1280px;
   width: 80%; }
@@ -188,6 +188,46 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .form__input {
+    margin-bottom: 20px;
+    padding: 25px 40px;
+    border: none;
+    width: calc(50% - 7px); }
+    .form__input::-webkit-input-placeholder {
+      color: #1f1f1f; }
+    .form__input:-ms-input-placeholder {
+      color: #1f1f1f; }
+    .form__input::-ms-input-placeholder {
+      color: #1f1f1f; }
+    .form__input::placeholder {
+      color: #1f1f1f; }
+    .form__input--textarea {
+      width: 100%;
+      height: 295px;
+      resize: none;
+      padding-top: 40px; }
+  .form__butn {
+    width: 100%;
+    display: inline-block;
+    background: #e4a436;
+    font-family: "Abril Fatface", cursive;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    padding: 10px 30px;
+    border: none; }
 
 /* END GLOBAL STYLES */
 h2 {
@@ -221,7 +261,7 @@ h4 {
   font-size: 12.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #6a6a6a; }
+  color: #f6f6f6; }
 
 .main-nav {
   font-weight: 700;
@@ -253,7 +293,7 @@ h4 {
       font-size: 4rem;
       line-height: 0.5; }
   .main-nav__link {
-    color: #6a6a6a; }
+    color: #f6f6f6; }
     .main-nav__link--active {
       color: #e4a436; }
 
@@ -338,7 +378,7 @@ h4 {
 
 .footer {
   background-color: #1f1f1f;
-  color: #6a6a6a;
+  color: #f6f6f6;
   text-align: center;
   padding: 5px; }
 
@@ -363,7 +403,7 @@ h4 {
     font-size: 8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #6a6a6a;
+    color: #f6f6f6;
     line-height: 92px;
     position: relative;
     top: 17px; }
@@ -375,8 +415,7 @@ h4 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 100px 0;
-  border: 2px solid orange; }
+  padding: 100px 0; }
 
 .asides-section {
   display: -webkit-box;
@@ -387,15 +426,13 @@ h4 {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-flex: 3;
-  -ms-flex: 3 0 15%;
-  flex: 3 0 15%;
-  border: 2px solid blue; }
+  -ms-flex: 3 0 33.333%;
+  flex: 3 0 33.333%; }
 
 .aside {
   background-color: #fff;
   padding: 30px;
-  margin: 0 40px 20px 0;
-  border: 2px solid red; }
+  margin: 0 40px 20px 0; }
   .aside__headline {
     margin-top: 15px 0; }
   .aside__link {
@@ -415,15 +452,28 @@ h4 {
   flex-direction: column; }
 
 .article {
-  padding: 30px;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 50%;
   flex: 1 0 50%;
-  background: white;
-  margin-bottom: 20px;
-  bordeR: 2px solid red; }
-  .article:nth-of-type(odd) {
-    border-bottom: 8px solid #345231; }
+  background: white; }
+  .article--blog-post {
+    padding: 30px;
+    border-bottom: 5px solid #709b6b;
+    margin-bottom: 30px; }
+    .article--blog-post p {
+      margin-top: 15px; }
+  .article--comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 40px 30px;
+    margin-bottom: 20px; }
+    .article--comment:last-of-type {
+      margin-bottom: 30px;
+      border-bottom: 5px solid #709b6b; }
   .article__title {
     font-family: "Abril Fatface", cursive;
     font-size: 26px;
@@ -438,14 +488,3 @@ h4 {
   .article__profile-image {
     width: 100px;
     margin-right: 30px; }
-  .article p {
-    margin-top: 15px; }
-  .article__comment {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .article__comment p {
-      margin: 0; }

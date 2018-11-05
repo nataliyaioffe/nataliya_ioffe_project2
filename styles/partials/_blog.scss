@@ -17,7 +17,6 @@
         line-height: 92px;
         position: relative;
         top: 17px;
-
     }
 }
 
@@ -25,20 +24,17 @@
     display: flex;
     justify-content: space-between;
     padding: 100px 0 ;
-    border: 2px solid orange;
 }
 
 .asides-section {
     display: flex;
     flex-direction: column;
-    flex: 3 0 15%;
-    border: 2px solid blue;
+    flex: 3 0 33.333%;
 }
 .aside {
     background-color: $white;
     padding: 30px;
     margin: 0 40px 20px 0;
-    border: 2px solid red;
     &__headline {
         margin-top: 15px 0 ;
     }
@@ -57,14 +53,26 @@
     flex-direction: column;
 }
 .article {
-    padding: 30px;
     flex: 1 0 50%;
     background: white;
-    margin-bottom: 20px; 
-    bordeR: 2px solid red;
-    &:nth-of-type(odd) {
-        border-bottom: 8px solid $primary;
+    &--blog-post {
+        padding: 30px;
+        border-bottom: 5px solid $secondary;
+        margin-bottom: 30px;
+        p {
+            margin-top: 15px;
+        }  
     }
+    &--comment {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 30px;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 30px;
+            border-bottom: 5px solid $secondary;
+        }
+    }     
     &__title {
         @include heading-text(26);
         margin-bottom: 20px;
@@ -76,12 +84,5 @@
         width: 100px;
         margin-right: 30px;
     }
-    p {
-        margin-top: 15px;
-    }
-    &__comment {
-        display: flex;
-        justify-content: space-between;
-        p { margin: 0}
-    } 
+   
 }

@@ -35,24 +35,45 @@
     </header>
 
     <main>
-        <aside>
-            <div>
-                <ul class="social">
-                    <li class="social__list-item">
-                        <a href="#"><i class="fab fa-facebook-f"></i><span class="visuallyhidden">Facebook</span></a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="#"><i class="fab fa-instagram"></i><span class="visuallyhidden">Instagram</span></a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="#"><i class="fab fa-linkedin-in"></i><span class="visuallyhidden">LinkedIn</span></a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="#"><i class="fab fa-twitter"></i><span class="visuallyhidden">Twitter</span></a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+        <div class="wrapper">
+            <section class="flex-wrapper">
+                <section class="asides-section">
+                    <aside class="aside">
+                        <div class="aside__section-text">
+                            <ul class="social">
+                                <li class="social__list-item">
+                                    <a href="#" class="social__link"><i class="fab fa-facebook-f"></i><span class="visuallyhidden">Facebook</span></a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__link"><i class="fab fa-instagram"></i><span class="visuallyhidden">Instagram</span></a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i><span class="visuallyhidden">LinkedIn</span></a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__link"><i class="fab fa-twitter"></i><span class="visuallyhidden">Twitter</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </section>
+                <section class="articles-section">
+                    <form action="" method="post" name="comment-section "class="form">
+                        <label for="name" class="visuallyhidden">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" class="form__input">
+                        <!-- // end name input -->
+                        <label for="email" class="visuallyhidden">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email address" class="form__input">
+                        <!-- // end email input -->
+                        <label for="comment" class="visuallyhidden">Comment</label>
+                        <textarea class="form__input form__input--textarea" id="comment" name="comment" placeholder="Comment"></textarea>
+                        <!-- // end comment textarea -->
+                        <button class="form__butn">Post Comment</button>
+                    </form>
+                </section>
+            </section>
+            
+        </div>
     </main>
 
     <footer class="footer">

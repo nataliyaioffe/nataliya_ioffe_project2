@@ -21,7 +21,7 @@
                 <a href="index.html" class="main-nav__link">Home</a>
             </li>
             <li class="main-nav__list-item">
-                <a href="about.html" class="main-nav__link">About</a>
+                <a href="#" class="main-nav__link">About</a>
             </li>
             <li class="main-nav__list-item">
                 <a href="blogpost.html" class="main-nav__link--active">Blog</a>
@@ -31,12 +31,13 @@
             </li>
         </ul>
     </nav>
-
+    <!-- // END MAIN-NAV -->
     <header class="header header--blog">
         <div class="wrapper">
             <h1 class="header__headline">Blog & News</h1>
         </div>
     </header>
+    <!-- // END HEADER -->
 
     <main>
         <div class="wrapper">
@@ -53,6 +54,7 @@
                             </p>
                         </div>
                     </aside>
+                    <!-- end bio aside -->
                     <aside class="aside">
                         <div class="aside__section-text">
                             <h4 class="aside__headline">Recent Posts</h4>
@@ -64,11 +66,12 @@
                             </ul>
                         </div>
                     </aside>
+                    <!-- // end bullet aside -->
                 </section> 
                 <!-- // end ASIDES section -->
                 <!-- start ARTICLE section -->
                 <section class="articles-section">
-                    <article class="article">
+                    <article class="article article--blog-post">
                         <div class="article__text">
                             <h3 class="article__title">My Favourite Travel Destinations</h3>
                             <p>Monday October 8th, 2018 by Willow</p>
@@ -80,34 +83,53 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam error, dolorum libero a quae veniam quam facere autem odio consequatur enim obcaecati velit necessitatibus excepturi natus atque optio laboriosam! Praesentium aperiam culpa saepe, molestiae illo dignissimos perferendis ad magni aliquid, minima debitis nobis, quasi ipsum esse. Dicta quo repudiandae eius. Commodi minus molestias aperiam natus?</p>
                         </div>
                     </article>
-                    <article class="article article__comment">
+                    <!-- // end article/blog-post -->
+                    <article class="article article--comment">
                         <div class="article__profile-image">
                             <img src="../assets/blog-image-3.jpg" alt="">
                         </div>
                         <div class="article__text">
-                            <p>Monday October 8th, 2018 by Willow</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi porro laboriosam cum deserunt alias doloremque optio quisquam, veritatis tenetur reprehenderit sint odit rerum sapiente sed provident cupiditate enim minima ducimus recusandae voluptatem obcaecati similique.</p>
+                            <p>Tuesday October 9th, 2018 by Barb</p>
+                            <p>Fusce vehicula dolor sit amet consectetur adipisicing elit. Architecto, sequi porro laboriosam cum deserunt alias doloremque optio quisquam, veritatis tenetur reprehenderit sint odit rerum sapiente sed provident cupiditate enim.</p>
                         </div>
                     </article>
-                    <article class="article article__comment">
+                    <!-- // end comment -->
+                    <article class="article article--comment">
                         <div class="article__profile-image">
                             <img src="../assets/blog-image-4.jpg" alt="">
                         </div>
                         <div class="article__text">
-                            <p>Monday October 10th, 2018 by Willow</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi porro laboriosam cum deserunt alias
-                                doloremque optio quisquam, veritatis tenetur reprehenderit sint odit rerum sapiente sed provident cupiditate
-                                enim minima ducimus recusandae voluptatem obcaecati similique.</p>
+                            <p>Wednesday October 10th, 2018 by Daisy</p>
+                            <p>Donec viverra eleifend lacus, adipisicing elit. Architecto, sequi porro laboriosam cum deserunt alias doloremque optio quisquam, veritatis tenetur reprehenderit sint odit rerum sapiente arcu.</p>
                             </div>
                     </article>
+                    <!-- // end comment -->                   
+                    <form action="" method="post" name="comment-section "class="form">
+                        <label for="name" class="visuallyhidden">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" class="form__input">
+                        <!-- // end name input -->
+                        <label for="email" class="visuallyhidden">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email address" class="form__input">
+                        <!-- // end email input -->
+                        <label for="comment" class="visuallyhidden">Comment</label>
+                        <textarea class="form__input form__input--textarea" id="comment" name="comment" placeholder="Comment"></textarea>
+                        <!-- // end comment textarea -->
+                        <button class="form__butn">Post Comment</button>
+                    </form>
+                    <!-- // end form -->
                 </section>
+                <!-- // end ARTICLES-section -->
             </section>
+            <!-- // end flex-wrapper -->
         </div>
+        <!-- // end wrapper -->
     </main>
+    <!-- // END MAIN -->
 
     <footer class="footer">
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+    <!-- /// END FOOTER -->
 </body>
 
 </html>
