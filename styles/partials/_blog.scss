@@ -37,16 +37,20 @@
     background-color: $white;
     padding: 30px;
     margin: 0 40px 20px 0;
+    &__image {
+        margin-bottom: 30px;
+    }
     &__headline {
-        margin-top: 15px 0 ;
+        margin-bottom: 20px;
     }
     &__link--highlight {
-        font-weight: 700;
         color: $secondary;
     }
-    &__list {
-        margin-left: 30px;
-        list-style-type: disc;
+    &__list-item {
+        &::before {
+            content: "•";
+            margin: 0 20px 0 10px;;
+        }
     }
 }
 
@@ -61,10 +65,10 @@
         padding: 30px;
         border-bottom: 5px solid $secondary;
         margin-bottom: 30px;
-        p {
+    }
+    &__paragraph {
             margin-top: 15px;
         }  
-    }
     &--comment {
         display: flex;
         justify-content: space-between;
@@ -86,5 +90,24 @@
         width: 100px;
         margin-right: 30px;
     }
-   
 }
+
+
+// .recent {
+//  .aside__list {
+//    padding-left: 30px;
+//    list-style: none;
+//    &__item {
+//      color: $black-shade;
+//      margin-bottom: 10px;
+//      letter-spacing: 0px;
+//      &::before {
+//        content: “•”;
+//        color: $orange-shade;
+//        display: inline-block;
+//        width: 1em;
+//        margin-left: -1em;
+//      }
+//    }
+//  }
+// }
