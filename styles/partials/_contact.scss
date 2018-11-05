@@ -1,0 +1,21 @@
+// CONTACT PAGE STYLES
+
+.social {
+    display: flex;
+    margin-bottom: 20px;
+    &__list-item {
+        margin-right: 35px;
+    }
+    &__link {
+        color: $primary;
+    }
+    &__icon {
+        font-size: 3rem;
+    }
+}
+
+.aside__link {
+    // color: $dark;
+
+}
+

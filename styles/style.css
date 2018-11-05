@@ -317,14 +317,6 @@ h4 {
   bordeR: 1px solid blue;
   width: 40%; }
 
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
 .head-section--top {
   padding: 100px 0 150px 0; }
 
@@ -435,7 +427,7 @@ h4 {
   margin: 0 40px 20px 0; }
   .aside__headline {
     margin-top: 15px 0; }
-  .aside__link {
+  .aside__link--highlight {
     font-weight: 700;
     color: #709b6b; }
   .aside__list {
@@ -488,3 +480,15 @@ h4 {
   .article__profile-image {
     width: 100px;
     margin-right: 30px; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px; }
+  .social__list-item {
+    margin-right: 35px; }
+  .social__link {
+    color: #345231; }
+  .social__icon {
+    font-size: 3rem; }
