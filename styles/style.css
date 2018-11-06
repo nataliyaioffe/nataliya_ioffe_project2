@@ -315,17 +315,15 @@ h4 {
 .hero-image {
   width: 40%; }
 
-.head-section--top {
-  padding: 100px 0 175px 0; }
-
-.head-section--bottom {
-  padding-top: 50px; }
-
 .head-section__section-content--right {
   width: 65%; }
 
-.head-section__section-content--center {
+.head-section--top {
+  padding: 100px 0 175px 0;
   text-align: center; }
+
+.head-section--bottom {
+  padding-top: 50px; }
 
 .section-content__item {
   width: 50%;

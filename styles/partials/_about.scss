@@ -1,26 +1,23 @@
 // WHO'S WILLOW
 
-.head-section--top {
-    padding: 100px 0 175px 0;
+.head-section {
+    &__section-content--right {
+        width: 65%;
+    }
+    // &__section-content--center {
+    //     text-align: center;
+    // }
 }
 
+.head-section--top {
+    padding: 100px 0 175px 0;
+    text-align: center;
+}
 .head-section--bottom {
     padding-top: 50px;
     // rest of padding comes from flex-wrapper
 }
 
-.head-section {
-    &__section-content--right {
-        width: 65%;
-    }
-    &__section-content--center {
-        text-align: center;
-    }
-}
-
-// .flex-wrapper {
-    // border: 2px solid orange;
-// }
 .section-content {
     // border: 1px solid blue;
     // &--right {
@@ -82,10 +79,6 @@
     position: relative;
     top: -20px;
 }
-
-
-
-
 
 // GALLERY
 
