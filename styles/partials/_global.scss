@@ -31,7 +31,13 @@ body {
 .flex-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 100px 0 ;
+    flex-wrap: wrap;
 
+}
+
+.headline-text {
+    margin-bottom: 30px;
 }
 
 .form {

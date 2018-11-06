@@ -56,7 +56,7 @@
             <div class="wrapper">
                 <div class="section-content">
                     <div class="section-content__text">
-                        <h2>Who's Willow?</h2>
+                        <h2 class="headline-text">Who's Willow?</h2>
                         <p class="section-content__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam saepe perferendis repudiandae nobis deserunt veritatis dolorem, voluptatibus cum a suscipit delectus error, distinctio voluptates adipisci dignissimos ut, animi totam. Id, repellat. Quas repellendus dolore est ex sint maiores veniam, nesciunt, quasi sequi odio, possimus asperiores vel nihil consequuntur.</p>
                         <a href="#" class="section-content__btn">Find out more</a>
                     </div>
@@ -67,7 +67,7 @@
         </section>
         <!-- /// END WHO'S WILLOW -->
         
-        <section class="subsections">
+        <section class="subsection">
             <!-- start "favorite things" -->
             <div class="wrapper">
                 <div class="section-content">
@@ -75,7 +75,7 @@
                         <img src="./assets/home-image-2.jpg" alt="A wooden bridge over a waterfall.">
                     </div>
                     <div class="section-content__item ection-content__text section-content__text--left">
-                        <h3>Favorite Things</h3>
+                        <h3 class="headline-text">Favorite Things</h3>
                         <p class="section-content__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, praesentium. Minima obcaecati ab, id, nisi natus asperiores, aut blanditiis magnam quisquam laudantium architecto? Error, ducimus!</p>
                         <a href="#" class="section-content__btn">Read More</a>
                     </div>
@@ -87,7 +87,7 @@
                 <!-- start bucket list -->
                 <div class="section-content">
                     <div class="section-content__item section-content__text section-content__text--right">
-                        <h3>Bucket List</h3>
+                        <h3 class="headline-text">Bucket List</h3>
                         <p class="section-content__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam eveniet veritatis fugit voluptatum rerum reiciendis quia, vel, tenetur distinctio quasi debitis reprehenderit provident? Consequatur, quis!</p>
                         <a href="#" class="section-content__btn">Read More</a>
                     </div>
@@ -107,7 +107,7 @@
                     <img src="./assets/home-image-4.jpg" alt="">
                 </div>
                 <div class="section-content--left-align">
-                    <h2>Willow's Journey</h2>
+                    <h2 class="headline-text">Willow's Journey</h2>
                     <p class="section-content__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam accusamus perferendis repudiandae tenetur beatae, veniam eveniet et sit, cumque doloremque, illum suscipit molestias consectetur eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit eos ipsum neque maxime repellendus ex recusandae quas corporis at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi laudantium ratione. </p>
                     <a href="#" class="section-content__btn">Find out more</a>
                 </div>
@@ -125,16 +125,18 @@
         </section>
         <!-- /// END LANDSCAPE -->
 
-        <section>
+        <section class="subsection">
             <div class="wrapper">
-                <div>
-                    <img src="./assets/home-image-6.jpg" alt="Empty road winding through a foggy forrest land.">
-                </div>
-                <div>
-                    <img src="./assets/home-image-7.jpg" alt="Close up bowl of lemons.">
-                </div>
-                <div>
-                    <img src="./assets/home-image-8.jpg" alt="Beautiful staircase against an ornate blue and goldleaf wall.">
+                <div class="gallery flex-wrapper">
+                    <div class="gallery__item">
+                        <img src="./assets/home-image-6.jpg"  alt="Empty road winding through a foggy forrest land.">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./assets/home-image-7.jpg"  alt="Close up bowl of lemons.">
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./assets/home-image-8.jpg"  alt="Beautiful staircase against an ornate blue and goldleaf wall.">
+                    </div>
                 </div>
             </div>
             <!-- /// end wrapper -->
@@ -143,32 +145,42 @@
 
         <section>
             <div class="wrapper">
-                <div>
-                    <div>ICON</div>
-                    <div>
-                        <h4>Photos</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat minus recusandae id possimus eveniet.</p>
+                <div class="blurbs">
+                    <div class="blurbs__blurb-item">
+                        <div class="blurbs__icon-item">
+                            <i class="fas fa-image blurbs__icon"></i>
+                        </div>
+                        <div>
+                            <h3 class="headline-text">Photos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat minus recusandae id possimus eveniet.</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div>ICON</div>
-                    <div>
-                        <h4>About</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat minus recusandae id possimus eveniet.</p>
+                    <div class="blurbs__blurb-item">
+                        <div class="blurbs__icon-item">
+                            <i class="fas fa-user-alt blurbs__icon"></i>
+                        </div>
+                        <div>
+                            <h3 class="headline-text">About</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat minus recusandae id possimus eveniet.</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div>ICON</div>
-                    <div>
-                        <h4>Blog</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat minus recusandae id possimus eveniet.</p>
+                    <div class="blurbs__blurb-item">
+                        <div class="blurbs__icon-item">
+                            <i class="fas fa-desktop blurbs__icon"></i>
+                        </div>
+                        <div>
+                            <h3 class="headline-text">Blog</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat minus recusandae id possimus eveniet.</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div>ICON</div>
-                    <div>
-                        <h4>Contact</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat minus recusandae id possimus eveniet.</p>
+                    <div class="blurbs__blurb-item">
+                        <div class="blurbs__icon-item">
+                            <i class="fas fa-phone blurbs__icon"></i>
+                        </div>
+                        <div>
+                            <h3 class="headline-text">Contact</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat minus recusandae id possimus eveniet.</p>
+                        </div>
                     </div>
                 </div>
             </div>
