@@ -289,31 +289,53 @@ h4 {
 
 .main-header {
   background-color: #345231;
-  height: 85vh; }
+  height: 90vh; }
+
+.main-header-flex {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.hero-headline-container {
+  width: 60%;
+  position: relative; }
 
 .hero-headline {
+  color: white;
   font-family: "Abril Fatface", cursive;
   font-size: 125.5px;
   font-size: 12.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #f6f6f6; }
+  border: 1px solid red;
+  position: relative;
+  left: 70px;
+  top: 0; }
 
-.hero-headline {
-  position: relative; }
-
-.hero-headline::before {
+.hero-headline-container::before {
   content: "";
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 0;
+  top: -75px;
   left: 0;
   background-image: url(../assets/circle-text.png);
   background-repeat: no-repeat; }
 
 .hero-image {
-  width: 40%; }
+  width: 40%;
+  position: relative;
+  -webkit-box-shadow: 20px 20px #fff;
+  box-shadow: 20px 20px #fff;
+  right: 0;
+  top: 50px; }
 
 .head-section__section-content--right {
   width: 65%; }
