@@ -1,0 +1,31 @@
+.main-nav {
+    font-weight: 700;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background-color: $primary;
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        padding: 20px;
+        &:nth-of-type(2) {
+            order: -1;
+        }
+        &:nth-of-type(3) {
+            order: -1;
+        }
+        &--logo {
+            font-family: $headingfont;
+            font-size: 4rem;
+            line-height: 0.5;
+        }
+    }
+    &__link {
+        color: $light;
+        &--active {
+            color: $accent;
+        } 
+    }
+}

@@ -4,50 +4,20 @@
     background-color: $primary;
     height: 85vh;
     }
-    .hero-headline {
-        font-family: $headingfont;
-        font-size: 125.5px;
-        font-size: 12.5rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color:$light;
-    }
 
-.main-nav {
-    font-weight: 700;
-    font-size: 2.0rem;
+.hero-headline {
+    font-family: $headingfont;
+    font-size: 125.5px;
+    font-size: 12.5rem;
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    background-color: $primary;
-    &__list {
-        display: flex;
-    }
-    &__list-item {
-        padding: 20px;
-        &:nth-of-type(2) {
-            order: -1;
-        }
-        &:nth-of-type(3) {
-            order: -1;
-        }
-        &--logo {
-            font-family: $headingfont;
-            font-size: 4rem;
-            line-height: 0.5;
-        }
-    }
-    &__link {
-        color: $light;
-        &--active {
-            color: $accent;
-        } 
-    }
+    letter-spacing: 1px;
+    color:$light;
 }
 
 .hero-headline {
     position: relative;
 }
+
 .hero-headline::before {
     content: "";
     width: 200px;
@@ -57,11 +27,8 @@
     left: 0;
     background-image: url(../assets/circle-text.png);
     background-repeat: no-repeat;
-
 }
 
-.hero-text {
-}
 .hero-image {
     width: 40%;
 }
