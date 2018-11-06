@@ -1,27 +1,39 @@
 // WHO'S WILLOW
 
 .head-section--top {
-    padding: 100px 0 150px 0;
+    padding: 100px 0 175px 0;
 }
 
 .head-section--bottom {
-    padding: 150px 0 100px 0;
+    padding-top: 50px;
+    // rest of padding comes from flex-wrapper
 }
 
+.head-section {
+    &__section-content--right {
+        width: 65%;
+    }
+    &__section-content--center {
+        text-align: center;
+    }
+}
+
+// .flex-wrapper {
+    // border: 2px solid orange;
+// }
 .section-content {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid blue;
-    // padding: 50px 0;
+    // border: 1px solid blue;
+    // &--right {
+        // width: 65%;
+    // }
+    // &--center {
+    //     text-align: center;
+    // }
     &__item {
         width: 50%;
         position: relative;
-        border: 1px solid green;
     }
     &__text {
-        &--center {
-            text-align: center; 
-        }
         &--left {
             padding-left: 100px;
         }
@@ -29,14 +41,20 @@
             text-align: right;
         }
     }
-    &__description {
+    &__headline-text {
         margin-bottom: 30px;
+    }
+    &__description {
+        margin-bottom: 15px;
     }
     &__btn {
         @include button(auto);
         padding: 10px 30px;
+        margin-top: 15px;
     }
 }
+
+
 
 // FAVOURITE THINGS / BUCKET LIST
 .subsection {
@@ -44,24 +62,29 @@
     // padding: 75px 0;
 }
 
-.subsection .wrapper {
-    border: 1px solid red;
-}
-
-.box-shadow--left {
+.fb-box-shadow--left {
     box-shadow: 20px 20px $secondary, 
     -150px 20px $secondary;
     position: absolute;
     top: -110px;
 }
-
-
-.box-shadow--right {
+.fb-box-shadow--right {
     box-shadow: 20px 20px $primary, 
     150px 20px $primary
 }
 
 // JOURNEY
+
+.box-shadow {
+    box-shadow: 20px 20px $secondary, 
+}
+.section-content__image {
+    position: relative;
+    top: -20px;
+}
+
+
+
 
 
 // GALLERY
