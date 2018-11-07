@@ -23,10 +23,13 @@ body {
     margin: 0 auto;
     max-width: 1280px;
     width: 80%;
+    height: 100%;
+    border: 1px solid blue;
 }
 .flex-wrapper {
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
 }
 
 /* END GLOBAL STYLES */
@@ -50,4 +53,15 @@ h3 {
 h4 {
     @include heading-text(24);
     // "About Willow, Recent Posts"
+}
+
+// MEDIA QUERIES
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+    
+    .main-header .flex-wrapper {
+        flex-direction: column;
+    }
 }

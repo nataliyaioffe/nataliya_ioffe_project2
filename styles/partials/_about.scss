@@ -112,3 +112,9 @@
         border-radius: 50%;
     }
 }
+
+@media (max-width: 1040px) {
+    .head-section--top {
+        padding: 100px 0 150px 0;
+    }
+}
