@@ -4,37 +4,29 @@ img {
     width: 100%;
     max-width: 100%; 
     display: block;}
-
 a {
     text-decoration: none; 
     color: $dark;
 }
-
 ul {
     list-style-type: none;
 }
-
 html {
     font-size: 62.5%;
 }
-
 body {
     @include body-text(20);
     background: $light;
     color: $dark;
 }
-
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
     width: 80%;
 }
-
 .flex-wrapper {
     display: flex;
     justify-content: space-between;
-    // flex-wrap: wrap;
-    padding: 100px 0 ;
 }
 
 /* END GLOBAL STYLES */

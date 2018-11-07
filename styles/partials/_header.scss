@@ -2,39 +2,34 @@
 
 .main-header {
     background-color: $primary;
-    height: 90vh;
 }
-
 .main-header-flex {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
-
 .hero-headline-container {
     width: 60%;
     position: relative;
+    z-index: 10;
 
 }
 .hero-headline {
     color: white;
     font-family: $headingfont;
-    font-size: 125.5px;
     font-size: 12.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     // color:$light;
-    border: 1px solid red;
     position: relative;
-    left: 70px;
-    top: 0;
+    left: 50px;
+    top: 15px;
 }
-
 .hero-headline-container::before {
     content: "";
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     position: absolute;
     top: -75px;
     left: 0;
@@ -42,11 +37,46 @@
     background-repeat: no-repeat;
 }
 .hero-image {
-    width: 40%;
+    width: 400px;
     position: relative;
     box-shadow: 20px 20px $white;
     right: 0;
-    top: 50px;
+    top: 75px;
 }
 
-// box-shadow: 15px 15px 0 white;
+// BLOG PAGE STYLES
+
+.header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    &--blog {
+        background-image: url(../assets/blog-image-1.jpg);
+        background-size: cover;
+    }
+    &--contact {
+        background-image: url(../assets/contact-image-1.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    &__headline {
+        @include heading-text(80);
+        color: $light;
+        line-height: 92px;
+        position: relative;
+        top: 17px;
+    }
+}
+
+// MEDIA QUERIES
+@media (max-width: 1040px) {
+    .hero-headline {
+        font-size: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}

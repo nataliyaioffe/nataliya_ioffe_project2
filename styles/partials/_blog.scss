@@ -1,33 +1,13 @@
-// BLOG PAGE STYLES
-
-.header {
-    height: 50vh;
-    display: flex;
-    align-items: flex-end;
-    &--blog {
-        background-image: url(../assets/blog-image-1.jpg);
-        background-size: cover;
-    }
-    &--contact {
-        background-image: url(../assets/contact-image-1.jpg);
-        background-size: cover;
-        background-position: bottom;
-    }
-    &__headline {
-        @include heading-text(80);
-        color: $light;
-        line-height: 92px;
-        position: relative;
-        top: 17px;
-    }
+.columns-layout {
+    padding: 100px 0;
 }
 
-.asides-section {
+.asides-column {
     display: flex;
     flex-direction: column;
     width: 33.333%;
 }
-.aside {
+.aside-section {
     display: flex;
     flex-direction: column;
     background-color: $white;
@@ -54,7 +34,6 @@
     display: flex;
     flex-direction: column;
     width: 66.666%;
-    // flex: 0 0 60%;
 }
 .article {
     flex: 1 0 50%;
@@ -81,21 +60,11 @@
         @include heading-text(26);
         margin-bottom: 20px;
     }
-    &__text {
-        // flex: 0 0 85%;
-    }
     &__profile-image {
         min-width: 100px;
         margin-right: 30px;
     }
 }
-
-// @media (max-width: 1110px) {
-//     .blog .wrapper {
-//         width: 95%;
-//     }
-// }
-
 
 .form {
     display: flex;
@@ -123,17 +92,18 @@
    } 
 }
 
-
 @media (max-width: 1110px) {
-    .flex-wrapper {
+    .columns-layout {
         flex-direction: column-reverse;
         padding: 50px 0;
     }
-    .asides-section {
+    .asides-column {
         width: 100%;
     }
-    .aside {
+    .bio {
         flex-direction: row;
+    }
+    .aside-section {
         justify-content: space-between;
         padding: 30px;
         &:nth-of-type(1) {
@@ -147,7 +117,7 @@
     .articles-section {
         width: 100%;
     }
-    .aside__image {
+    .aside-section__image {
         max-width: 150px;
         margin-right: 30px;
         margin-bottom: 0;
@@ -156,13 +126,14 @@
 }
 
 @media (max-width: 749px) {
-    .blog .wrapper {
+    .wrapper {
         width: 90%;
     }
-    .aside__image {
+    .aside-section__image {
         display:none;
     }
 }
+
 @media (max-width: 625px) {
     .header {
         align-items: center;
@@ -177,7 +148,7 @@
 }
 
 @media (max-width: 510px) {
-    .aside {
+    .aside-section {
         &__link {
             display: block;
         }
@@ -185,6 +156,5 @@
     .form__input {
         width: 100%;
     }
-
 }
 

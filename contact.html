@@ -10,64 +10,70 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <nav class="main-nav">
-        <ul class="main-nav__list">
-            <li class="main-nav__list-item main-nav__list-item--logo">
-                <a href="index.html" class="main-nav__link main-nav__link--logo">Willow</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="index.html" class="main-nav__link">Home</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="#" class="main-nav__link">About</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="blogpost.html" class="main-nav__link">Blog</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="contact.html" class="main-nav__link--active">Contact</a>
-            </li>
-        </ul>
-    </nav>
+<body class="contact">
+    <!-- START HEADER -->
     <header class="header header--contact">
+        <!-- START MAIN-NAV -->
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="exit-responsive main-nav__link"><i class="fas fa-times"></i></li>
+                <li class="main-nav__list-item main-nav__list-item--logo">
+                    <a href="index.html" class="main-nav__link main-nav__link--logo">Willow</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="index.html" class="main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="#" class="main-nav__link">About</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="blogpost.html" class="main-nav__link">Blog</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="contact.html" class="main-nav__link--active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- // END MAIN-NAV -->
+        <!-- start wrapper -->
         <div class="wrapper">
+            <p class="hamburger"><i class="fas fa-bars"></i></p>
             <h1 class="header__headline">Contact Me</h1>
         </div>
+        <!-- // end wrapper -->
     </header>
-
+    <!-- // END HEADER -->
+    <!-- START MAIN -->
     <main>
         <div class="wrapper">
-            <section class="flex-wrapper">
-                <section class="asides-section">
-                    <aside class="aside">
-                        <div class="aside__section-text">
-                            <ul class="social">
-                                <li class="social__list-item">
-                                    <a href="#" class="social__link"><i class="fab fa-facebook-f social__icon"></i><span class="visuallyhidden">Facebook</span></a>
-                                </li>
-                                <li class="social__list-item">
-                                    <a href="#" class="social__link"><i class="fab fa-twitter social__icon"></i><span class="visuallyhidden">Twitter</span></a>
-                                </li>
-                                
-                                <li class="social__list-item">
-                                    <a href="#" class="social__link"><i class="fab fa-linkedin-in social__icon"></i><span class="visuallyhidden">LinkedIn</span></a>
-                                </li>
-                                <li class="social__list-item">
-                                    <a href="#" class="social__link"><i class="fab fa-instagram social__icon"></i><span class="visuallyhidden">Instagram</span></a>
-                                </li>
-                            </ul>
-                            <a href="info@email.com" class="aside__link">info@email.com</a> 
-                            <p>123 - 456 - 7890</p>
-                            <p>123 Queen Street West, Unit 10</p>
-                            <p>Toronto, Ontario</p>
-                            <p>M5V2D5</p>
-                        </div>
-                    </aside>
-                    <!-- // end aside -->
-                </section>
-                <!-- // end ASIDES section -->
-
+            <div class="columns-layout flex-wrapper">
+                <aside class="asides-column"> 
+                    <section class="aside-section">
+                        <ul class="social">
+                            <li class="social__list-item">
+                                <a href="#" class="social__link"><i class="fab fa-facebook-f social__icon"></i><span class="visuallyhidden">Facebook</span></a>
+                            </li>
+                            <li class="social__list-item">
+                                <a href="#" class="social__link"><i class="fab fa-twitter social__icon"></i><span class="visuallyhidden">Twitter</span></a>
+                            </li>
+                            
+                            <li class="social__list-item">
+                                <a href="#" class="social__link"><i class="fab fa-linkedin-in social__icon"></i><span class="visuallyhidden">LinkedIn</span></a>
+                            </li>
+                            <li class="social__list-item">
+                                <a href="#" class="social__link"><i class="fab fa-instagram social__icon"></i><span class="visuallyhidden">Instagram</span></a>
+                            </li>
+                        </ul>
+                        <a href="info@email.com" class="aside-section__link">info@email.com</a> 
+                        <p>123 - 456 - 7890</p>
+                        <p>123 Queen Street West, Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                    </section>
+                    <!-- // end aside section (w/ social) -->
+                </aside>
+                <!-- // END ASIDES COLUMN -->
+                <!-- START ARTICLES SECTION -->
                 <section class="articles-section">
                     <form action="" method="post" name="comment-section "class="form">
                         <label for="name" class="visuallyhidden">Full Name</label>
@@ -82,13 +88,32 @@
                         <button class="form__butn">Post Comment</button>
                     </form>
                 </section>
-            </section>
-            
+            </div>
         </div>
+        <!-- // end wrapper -->
     </main>
+    <!-- // END MAIN -->
 
+    <!-- START FOOTER -->
     <footer class="footer">
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+    <!-- // END FOOTER -->
+
+    <!-- jQuery for HAMBURGER-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>        
+        $(document).ready(function () {
+            $('.hamburger').on('click', function () {
+                // toggle class show on the menu
+                $('.main-nav').toggleClass('show');
+            });
+
+            $('.exit-responsive').on('click', function () {
+                // toggle class show on the menu
+                $('.main-nav').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 </html>

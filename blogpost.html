@@ -12,64 +12,69 @@
 </head>
 
 <body class="blog">
-    <nav class="main-nav">
-        <ul class="main-nav__list">
-            <li class="main-nav__list-item main-nav__list-item--logo">
-                <a href="index.html" class="main-nav__link main-nav__link--logo">Willow</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="index.html" class="main-nav__link">Home</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="#" class="main-nav__link">About</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="blogpost.html" class="main-nav__link--active">Blog</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="contact.html" class="main-nav__link">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- // END MAIN-NAV -->
     <header class="header header--blog">
+        <!-- START MAIN-NAV -->
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="exit-responsive main-nav__link"><i class="fas fa-times"></i></li>
+                <li class="main-nav__list-item main-nav__list-item--logo">
+                    <a href="index.html" class="main-nav__link main-nav__link--logo">Willow</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="index.html" class="main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="#" class="main-nav__link">About</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="blogpost.html" class="main-nav__link--active">Blog</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="contact.html" class="main-nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- // END MAIN-NAV -->
+        <!-- start wrapper -->
         <div class="wrapper">
+            <p class="hamburger"><i class="fas fa-bars"></i></p>
             <h1 class="header__headline">Blog & News</h1>
         </div>
+        <!-- end wrapper -->
     </header>
     <!-- // END HEADER -->
-
+    <!-- START MAIN -->
     <main>
         <div class="wrapper">
-            <section class="flex-wrapper">
-                <aside class="asides-section">
-                    <section class="aside">
-                        <div class="aside__image">
+            <div class="columns-layout flex-wrapper">
+                <aside class="asides-column">
+                    <section class="aside-section bio">
+                        <div class="aside-section__image">
                             <img src="../assets/blog-image-2.jpg" alt="Beauty shot of Willow.">
                         </div>
-                        <div class="aside__section-text">
-                            <h4 class="aside__headline">About Willow</h4>
+                        <div>
+                            <h4 class="aside-section__headline">About Willow</h4>
                             <p>
-                            Lorem ipsum nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#" class="aside__link aside__link--highlight">Find out more.</a>   
+                            Lorem ipsum nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#" class="aside-section__link aside-section__link--highlight">Find out more.</a>   
                             </p>
                         </div>
                     </section>
                     <!-- end bio aside -->
-                    <section class="aside">
-                        <div class="aside__section-text">
-                            <h4 class="aside__headline">Recent Posts</h4>
-                            <ul class="aside__list">
-                                <li class="aside__list-item">Lorem dolor sit amet</li>
-                                <li class="aside__list-item">Ipsum dolor sit</li>
-                                <li class="aside__list-item">Dolor lorem, ipsum it</li>
-                                <li class="aside__list-item">Consectetur dolor lorem</li>
+                    <section class="aside-section">
+                        <!-- <div> -->
+                            <h4 class="aside-section__headline">Recent Posts</h4>
+                            <ul class="aside-section__list">
+                                <li class="aside-section__list-item">Lorem dolor sit amet</li>
+                                <li class="aside-section__list-item">Ipsum dolor sit</li>
+                                <li class="aside-section__list-item">Dolor lorem, ipsum it</li>
+                                <li class="aside-section__list-item">Consectetur dolor lorem</li>
                             </ul>
-                        </div>
+                        <!-- </div> -->
                     </section>
                     <!-- // end bullet aside -->
                 </aside> 
-                <!-- // end ASIDES section -->
-                <!-- start ARTICLE section -->
+                <!-- // END ASIDES SECTION -->
+                <!-- START ARTICLE SECTION -->
                 <section class="articles-section">
                     <article class="article article--blog-post">
                         <div class="article__text">
@@ -83,7 +88,8 @@
                             <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam error, dolorum libero a quae veniam quam facere autem odio consequatur enim obcaecati velit necessitatibus excepturi natus atque optio laboriosam! Praesentium aperiam culpa saepe, molestiae illo dignissimos perferendis ad magni aliquid, minima debitis nobis, quasi ipsum esse. Dicta quo repudiandae eius. Commodi minus molestias aperiam natus?</p>
                         </div>
                     </article>
-                    <!-- // end article/blog-post -->
+                    <!-- // END ARTICLE / BLOG-POST -->
+                    <!-- commentarticle  -->
                     <article class="article article__comment">
                         <div class="article__profile-image">
                             <img src="../assets/blog-image-3.jpg" alt="">
@@ -93,7 +99,7 @@
                             <p>Fusce vehicula dolor sit amet consectetur adipisicing elit. Architecto, sequi porro laboriosam cum deserunt alias doloremque optio quisquam, veritatis tenetur reprehenderit sint odit rerum sapiente sed provident cupiditate enim.</p>
                         </div>
                     </article>
-                    <!-- // end comment -->
+                    <!-- comment article -->
                     <article class="article article__comment">
                         <div class="article__profile-image">
                             <img src="../assets/blog-image-4.jpg" alt="">
@@ -103,7 +109,8 @@
                             <p>Donec viverra eleifend lacus, adipisicing elit. Architecto, sequi porro laboriosam cum deserunt alias doloremque optio quisquam, veritatis tenetur reprehenderit sint odit rerum sapiente arcu.</p>
                             </div>
                     </article>
-                    <!-- // end comment -->                   
+                    <!-- // end final comment -->     
+                    <!-- START FORM -->
                     <form action="" method="post" name="comment-section "class="form">
                         <label for="name" class="visuallyhidden">Full Name</label>
                         <input type="text" id="name" name="name" placeholder="Name" class="form__input">
@@ -113,23 +120,36 @@
                         <!-- // end email input -->
                         <label for="comment" class="visuallyhidden">Comment</label>
                         <textarea class="form__input form__input--textarea" id="comment" name="comment" placeholder="Comment"></textarea>
-                        <!-- //  class="article__paragraph"end comment textarea -->
                         <button class="form__butn">Post Comment</button>
                     </form>
-                    <!-- // end form -->
+                    <!-- // END FORM -->
                 </section>
-                <!-- // end ARTICLES-section -->
-            </section>
+                <!-- // END ARTICLES-SECTION -->
+            </div>
             <!-- // end flex-wrapper -->
         </div>
         <!-- // end wrapper -->
     </main>
     <!-- // END MAIN -->
-
+    <!-- START FOOTER  -->
     <footer class="footer">
         <p>Copyright © 2018 HackerYou</p>
     </footer>
     <!-- /// END FOOTER -->
-</body>
+     <!-- jQuery for HAMBURGER-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger').on('click', function () {
+                // toggle class show on the menu
+                $('.main-nav').toggleClass('show');
+            });
 
+            $('.exit-responsive').on('click', function () {
+                // toggle class show on the menu
+                $('.main-nav').toggleClass('show');
+            });
+        });
+    </script>
+</body>
 </html>
