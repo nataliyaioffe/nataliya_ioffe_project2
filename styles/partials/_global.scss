@@ -1,65 +1,59 @@
 /* START GLOBAL STYLES */
 img {
-    width: 100%;
-    max-width: 100%; 
-    display: block;}
-a {
-    text-decoration: none; 
-    color: $dark;
+     width: 100%;
+     max-width: 100%;
+     display: block;
 }
-ul {
-    list-style-type: none;
+ a {
+     text-decoration: none;
+     color: $dark;
 }
-html {
-    font-size: 62.5%;
+ ul {
+     list-style-type: none;
 }
-body {
-    @include body-text(20);
-    background: $light;
-    color: $dark;
+ html {
+     font-size: 62.5%;
 }
-.wrapper {
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 80%;
-    height: 100%;
+ body {
+     @include body-text(20);
+     background: $light;
+     color: $dark;
 }
-.flex-wrapper {
-    display: flex;
-    justify-content: space-between;
+ .wrapper {
+     margin: 0 auto;
+     max-width: 1280px;
+     width: 80%;
+     height: 100%;
 }
+ .flex-wrapper {
+     display: flex;
+     justify-content: space-between;
+}
+
 /* END GLOBAL STYLES */
 
 
-// h1 {
-    // @include heading-text(80);
-    // HOME"WILLOW" ... and Blog & News, Contact Me
-//   }
-
 h2 {
     @include heading-text(42);
-    // "who's willow, Willow's Journey"
 }
 h3 {
     @include heading-text(32);
-    // "favourite things, photos, about"
 }
 h4 {
     @include heading-text(24);
-    // "About Willow, Recent Posts"
 }
 
 // MEDIA QUERIES
 @media (max-width: 1272px) {
-    .wrapper {
-        width: 90%;
+     .wrapper {
+         width: 90%;
     }
 }
-@media (max-width: 768px) {
-    .wrapper {
-        width: 90%;
+ @media (max-width: 768px) {
+     .wrapper {
+         width: 90%;
     }
-    .main-header .flex-wrapper {
-        flex-direction: column;
+     .main-header .flex-wrapper {
+         flex-direction: column;
     }
 }
