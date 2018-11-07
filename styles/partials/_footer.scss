@@ -4,3 +4,9 @@
     text-align: center;
     padding: 5px;
 }
+
+@media (max-width: 420px) {
+    .footer {
+        font-size: 1.4rem;
+    }
+}

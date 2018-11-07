@@ -39,7 +39,6 @@
     background: $white;
 }
 .subsection-content {
-    // border: 1px solid red;
     display: flex;
     justify-content: space-between;
     &--top {
@@ -79,8 +78,7 @@
     position: relative;
 }
 
-// JOURNEY
-
+// WILLOW's JOURNEY
 .box-shadow {
     box-shadow: 20px 20px $secondary;
     position: relative;
@@ -88,13 +86,14 @@
 }
 
 // GALLERY
-
 .gallery {
     padding: 100px 0;
     &__item {
         width: calc(33.333% - 30px);
     }
 }
+
+// ICON BLURBS
 .blurbs {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +116,6 @@
 }
 
 // MEDIA QUERIES
-
 @media (max-width: 1135px) {
     .subsection-content {
         padding: 50px 0;
@@ -131,7 +129,6 @@
         }
     }
 }
-
 @media (max-width: 1040px) {
     .head-section--top {
         padding: 100px 0 150px 0;
@@ -191,4 +188,39 @@
             }
         }
     }
+    .blurbs {
+        flex-direction: column;
+        padding: 50px 0;
+        &__blurb-item {
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+        }
+        &__icon-item {
+            margin-right: 0;
+        }
+    }
+
 }
+
+
+// .blurbs {
+//     display: flex;
+//     flex-wrap: wrap;
+//     padding: 100px 0;
+//     &__blurb-item {
+//         display: flex;
+//         width: calc(50% - 30px);
+//         margin: 30px 0;
+//     }
+//     &__icon-item {
+//         margin-right: 25px;
+//         position: relative;
+//         top: -15px;
+//     }
+//     &__icon {
+//         background-color: $accent;
+//         padding: 20px;
+//         border-radius: 50%;
+//     }
+// }

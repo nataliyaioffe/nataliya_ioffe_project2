@@ -5,10 +5,10 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-        background-color: $primary;
-
+    background-color: $primary;
     &__list {
         display: flex;
+
     }
     &__list-item {
         padding: 20px;
@@ -39,6 +39,7 @@
 	display: block;
 }
 
+// MEDIA QUERIES
 @media (max-width: 768px) {
     .header .wrapper,
     .header .wrapper {
@@ -79,12 +80,12 @@
         }
         &__list-item {
             padding: 50px;
+            &--logo{
+                display: none;
+            }
         }
         &__link--active {
             color: $white;
-        }
-        &__link--logo{
-            display: none;
         }
     }
 }

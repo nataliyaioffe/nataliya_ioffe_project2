@@ -174,7 +174,7 @@ body {
   font-size: 2rem;
   line-height: 32px;
   color: #1f1f1f;
-  background: lightgrey;
+  background: #f6f6f6;
   color: #1f1f1f; }
 
 .wrapper {
@@ -257,7 +257,7 @@ h4 {
       font-size: 4rem;
       line-height: 0.5; }
   .main-nav__link {
-    color: lightgrey; }
+    color: #f6f6f6; }
     .main-nav__link--active {
       color: #e4a436; }
 
@@ -315,10 +315,10 @@ h4 {
       width: 100%; }
     .main-nav__list-item {
       padding: 50px; }
+      .main-nav__list-item--logo {
+        display: none; }
     .main-nav__link--active {
-      color: #fff; }
-    .main-nav__link--logo {
-      display: none; } }
+      color: #fff; } }
 
 .main-header {
   background-color: #345231; }
@@ -387,16 +387,18 @@ h4 {
     font-size: 8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: lightgrey;
+    color: #f6f6f6;
     line-height: 92px;
     position: relative;
     top: 17px; }
 
 @media (max-width: 1040px) {
-  .hero-headline {
-    font-size: 10rem; }
   .hero-image {
     top: 25px; } }
+
+@media (max-width: 925px) {
+  .hero-headline {
+    font-size: 10rem; } }
 
 @media (max-width: 768px) {
   .main-header {
@@ -586,7 +588,22 @@ h4 {
       width: 50%; }
       .gallery__item:nth-of-type(3) {
         border: 5px solid blue;
-        display: none; } }
+        display: none; }
+  .blurbs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 0; }
+    .blurbs__blurb-item {
+      width: 100%;
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .blurbs__icon-item {
+      margin-right: 0; } }
 
 .columns-layout {
   padding: 100px 0; }
@@ -779,6 +796,10 @@ h4 {
 
 .footer {
   background-color: #1f1f1f;
-  color: lightgrey;
+  color: #f6f6f6;
   text-align: center;
   padding: 5px; }
+
+@media (max-width: 420px) {
+  .footer {
+    font-size: 1.4rem; } }
