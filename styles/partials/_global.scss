@@ -24,12 +24,10 @@ body {
     max-width: 1280px;
     width: 80%;
     height: 100%;
-    border: 1px solid blue;
 }
 .flex-wrapper {
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 /* END GLOBAL STYLES */
@@ -56,6 +54,13 @@ h4 {
 }
 
 // MEDIA QUERIES
+
+@media (max-width: 1272px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
     .wrapper {
         width: 90%;

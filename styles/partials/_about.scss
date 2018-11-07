@@ -39,6 +39,7 @@
     background: $white;
 }
 .subsection-content {
+    // border: 1px solid red;
     display: flex;
     justify-content: space-between;
     &--top {
@@ -56,23 +57,25 @@
     }
     &__item--right {
         justify-content: flex-end;;
-        padding-left: 100px;
+        // padding-left: 100px;
+        padding-left: 10%;
     }
     &__item--left {
         justify-content: flex-start;
-        padding-right: 100px;
+        // padding-right: 100px;
+        padding-right: 10%;
         text-align: right;
     }    
 }
 .fb-box-shadow--left {
     box-shadow: 20px 20px $secondary, 
-    -150px 20px $secondary;
+    -250px 20px $secondary;
     position: relative;
     top: -20px;
 }
 .fb-box-shadow--right {
     box-shadow: 20px 20px $primary, 
-    150px 20px $primary;
+    250px 20px $primary;
     position: relative;
 }
 
@@ -113,8 +116,79 @@
     }
 }
 
+// MEDIA QUERIES
+
+@media (max-width: 1135px) {
+    .subsection-content {
+        padding: 50px 0;
+    &--top {
+            position: relative;
+            top: 0px;
+        }
+    &--bottom {
+            position: relative;
+            bottom: 0px;
+        }
+    }
+}
+
 @media (max-width: 1040px) {
     .head-section--top {
         padding: 100px 0 150px 0;
+    }
+}
+@media (max-width: 960px ) {
+    .subsection-content {
+        flex-direction: column;
+        padding: 50px 0 25px 0;
+        &--bottom {
+            flex-direction: column-reverse;
+            padding-top: 0;
+        } 
+        &--top{
+            padding-top: 50px;
+        }
+    }
+    .subsection-content__item {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 25px 0;
+    }
+    .fb-box-shadow--left, 
+    .fb-box-shadow--right {
+        max-width: 75%;
+        position: static;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .fb-box-shadow--left {
+        box-shadow: 
+        20px 20px $secondary, 
+        -250px 20px $secondary,
+        -20px 20px $secondary, 
+        250px 20px $secondary;
+    }
+    .fb-box-shadow--right {
+        box-shadow: 
+        20px 20px $primary, 
+        250px 20px $primary,
+        -20px 20px $primary,
+        -250px 20px $primary;
+    }
+}
+
+@media (max-width: 768px) {
+    .subsection__gallery .wrapper {
+        width: 100vw;
+    }
+    .gallery {
+        padding: 25px 0;
+        &__item {
+            width: 50%;
+            &:nth-of-type(3) {
+                border: 5px solid blue;
+                display:none;
+            }
+        }
     }
 }
