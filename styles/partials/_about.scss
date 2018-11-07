@@ -3,6 +3,7 @@
 .head-section {
     &__section-content--right {
         width: 65%;
+        padding-left: 50px;
     }
 }
 .head-section--top {
@@ -82,7 +83,12 @@
 .box-shadow {
     box-shadow: 20px 20px $secondary;
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
+}
+
+.test {
+    width: 100%;
+    object-fit: cover;
 }
 
 // GALLERY
@@ -135,6 +141,13 @@
     }
 }
 @media (max-width: 960px ) {
+    .section-content__image {
+        display:none;
+    }
+    .head-section__section-content--right {
+        text-align: center;
+        width: 100%;
+    }
     .subsection-content {
         flex-direction: column;
         padding: 50px 0 25px 0;
